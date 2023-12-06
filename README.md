@@ -9,6 +9,6 @@ This project is a WIKI for comparing the syntax of different relational database
 
 ## WIKI
 
-- Installation
-  - [Command line clients](1-installation/command-line-clients.md)
-  - [Visual Studio Code with the SQLTools extension](1-installation/vs-code-ext.md)
+- Connection
+  - [Command line clients](1-connection/command-line-clients.md)
+  - [Visual Studio Code with the SQLTools extension](1-connection/vs-code-ext.md)
