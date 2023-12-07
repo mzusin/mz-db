@@ -13,7 +13,7 @@ CREATE TABLE your_table_name (
 
 ```sql
 CREATE TABLE employees (
-    employee_id INT PRIMARY KEY,
+    employee_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     birth_date DATE,
@@ -50,7 +50,7 @@ CREATE TABLE employees (
 
 ```sql
 CREATE TABLE employees (
-    employee_id INT PRIMARY KEY,
+    employee_id INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(seed, increment)
     first_name NVARCHAR(50) NOT NULL,
     last_name NVARCHAR(50) NOT NULL,
     birth_date DATE,
