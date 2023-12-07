@@ -16,6 +16,7 @@ CREATE TABLE employees (
     employee_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
+    description TEXT, -- can store strings of any length
     birth_date DATE,
     hire_date DATE
 );
@@ -27,6 +28,7 @@ CREATE TABLE employees (
 - It's a common practice to use **lowercase** for table and column names in MySQL.
 - Naming convention for table names: use **lowercase letters** for table names, separate words with **underscores** or use **camelCase**.
 - In MySQL, **columns are nullable** by default.
+- MySQL uses UTF-8 encoding for character data by default.
 
 ## PostgreSQL
 
@@ -35,6 +37,7 @@ CREATE TABLE employees (
     employee_id serial PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
+    description TEXT, -- can store strings of any length
     birth_date DATE,
     hire_date DATE
 );
@@ -53,6 +56,7 @@ CREATE TABLE employees (
     employee_id INT IDENTITY(1,1) PRIMARY KEY, -- IDENTITY(seed, increment)
     first_name NVARCHAR(50) NOT NULL,
     last_name NVARCHAR(50) NOT NULL,
+    description NVARCHAR(MAX), -- can store strings of any length
     birth_date DATE,
     hire_date DATE
 );
@@ -63,14 +67,16 @@ CREATE TABLE employees (
 - In SQL Server, table and column names are **not case-sensitive**.
 - Naming convention for table names: use **PascalCase** (capitalize the first letter of each word) for table names.
 - In SQL Server, **columns are nullable** by default.
+- In PostgreSQL, character data types inherently support Unicode (UTF-8) by default.
 
 ## SQLite
  
 ```sql
 CREATE TABLE employees (
     employee_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    first_name TEXT NOT NULL,
-    last_name TEXT NOT NULL,
+    first_name VARCHAR(50) COLLATE UNICODE NOT NULL,
+    last_name VARCHAR(50) COLLATE UNICODE NOT NULL,
+    description TEXT, -- can store strings of any length
     birth_date DATE,
     hire_date DATE
 );
