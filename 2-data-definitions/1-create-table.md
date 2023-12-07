@@ -16,7 +16,7 @@ CREATE TABLE employees (
     employee_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
-    description TEXT, -- can store strings of any length
+    description TEXT, -- can store strings up to 65,535 bytes. Larger options: MEDIUMTEXT, LONGTEXT.
     birth_date DATE,
     hire_date DATE
 );
@@ -37,7 +37,7 @@ CREATE TABLE employees (
     employee_id serial PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
-    description TEXT, -- can store strings up to 65,535 bytes. Larger options: MEDIUMTEXT, LONGTEXT.
+    description TEXT, -- can store strings of any length
     birth_date DATE,
     hire_date DATE
 );
