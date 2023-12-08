@@ -35,7 +35,7 @@ CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
-    department_id INTEGER NOT NULL REFERENCES departments(department_id)
+    department_id INT NOT NULL REFERENCES departments(department_id)
 );
 ```
 
