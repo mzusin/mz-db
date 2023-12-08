@@ -18,7 +18,8 @@ CREATE TABLE employees (
     last_name VARCHAR(50) NOT NULL,
     description TEXT, -- can store strings up to 65,535 bytes. Larger options: MEDIUMTEXT, LONGTEXT.
     birth_date DATE,
-    hire_date DATE
+    hire_date DATE,
+    create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
@@ -39,7 +40,8 @@ CREATE TABLE employees (
     last_name VARCHAR(50) NOT NULL,
     description TEXT, -- can store strings of any length
     birth_date DATE,
-    hire_date DATE
+    hire_date DATE,
+    create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
@@ -58,7 +60,8 @@ CREATE TABLE employees (
     last_name NVARCHAR(50) NOT NULL,
     description NVARCHAR(MAX), -- can store strings of any length
     birth_date DATE,
-    hire_date DATE
+    hire_date DATE,
+    create_date DATETIME DEFAULT GETDATE()
 );
 ```
 
@@ -78,7 +81,8 @@ CREATE TABLE employees (
     last_name VARCHAR(50) COLLATE UNICODE NOT NULL,
     description TEXT, -- can store strings of any length
     birth_date DATE,
-    hire_date DATE
+    hire_date DATE,
+    create_date DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
