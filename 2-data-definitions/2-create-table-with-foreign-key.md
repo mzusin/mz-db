@@ -14,7 +14,7 @@ CREATE TABLE employees (
     employee_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
-    department_id INT,
+    department_id INT NOT NULL,
     FOREIGN KEY (department_id) REFERENCES departments(department_id)
 );
 ```
@@ -35,7 +35,7 @@ CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
-    department_id INTEGER REFERENCES departments(department_id)
+    department_id INTEGER NOT NULL REFERENCES departments(department_id)
 );
 ```
 
@@ -55,7 +55,7 @@ CREATE TABLE employees (
     employee_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
-    department_id INT,
+    department_id INT NOT NULL,
     FOREIGN KEY (department_id) REFERENCES departments(department_id)
 );
 ```
@@ -76,7 +76,7 @@ CREATE TABLE employees (
     employee_id INTEGER PRIMARY KEY,
     first_name TEXT NOT NULL,
     last_name TEXT NOT NULL,
-    department_id INTEGER,
+    department_id INTEGER NOT NULL,
     FOREIGN KEY (department_id) REFERENCES departments(department_id)
 );
 ```
