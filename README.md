@@ -15,8 +15,9 @@ This project is a WIKI for comparing the syntax of different relational database
 - Data Definitions
   - [Create Table](2-data-definitions/1-create-table.md)
   - [Create table with Foreign Key](2-data-definitions/2-create-table-with-foreign-key.md)
-  - [Alter Table](2-data-definitions/3-add-column.md)
-  - [Delete Table](2-data-definitions/4-delete-table.md)
+  - [Delete Table](2-data-definitions/3-delete-table.md)
+  - [Add Column](2-data-definitions/4-add-column.md)
+  - [Rename Column](2-data-definitions/5-rename-column.md)
 - CRUD
   - [Insert](3-crud/1-insert.md)
 - Stored Procedures
