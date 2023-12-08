@@ -17,3 +17,5 @@ This project is a WIKI for comparing the syntax of different relational database
   - [Alter Table](2-data-definitions/2-add-column.md)
 - CRUD
   - [Insert](3-crud/1-insert.md)
+- Stored Procedures
+  - [Create Stored Procedure](4-stored-procedures/1-create-stored-procedure.md)
