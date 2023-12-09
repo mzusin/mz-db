@@ -16,6 +16,24 @@ DELIMITER ;
 ## PostgreSQL
 
 ```sql
+CREATE OR REPLACE FUNCTION get_all_projects()
+AS $$
+BEGIN
+    SELECT 
+        project_id,
+        project_title,
+        project_desc,
+        project_color,
+        project_order
+    FROM plan_project;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Execute:
+-- CALL get_all_projects();
+```
+
+```sql
 CREATE OR REPLACE FUNCTION get_employee_count()
 RETURNS INTEGER AS $$
 DECLARE
