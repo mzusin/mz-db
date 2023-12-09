@@ -22,3 +22,5 @@ This project is a WIKI for comparing the syntax of different relational database
   - [Insert](3-crud/1-insert.md)
 - Stored Procedures
   - [Create Stored Procedure](4-stored-procedures/1-create-stored-procedure.md)
+- Triggers
+  - [Create Trigger](5-triggers/1-create-trigger.md)
