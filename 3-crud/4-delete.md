@@ -1,14 +1,14 @@
 # DELETE
 
 ```sql
-DELET FROM <table_name>
+DELETE FROM <table_name>
 WHERE <condition>;
 ```
 
 Or delete all rows:
 
 ```sql
-DELET <table_name>
+DELETE <table_name>
 WHERE <condition>;
 ```
 
