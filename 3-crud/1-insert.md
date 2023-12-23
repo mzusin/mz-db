@@ -16,6 +16,22 @@ VALUES (
     '2022-01-01'
 );
 ```
+Or multi-row INSERT statement:
+
+```sql
+INSERT INTO employees (first_name, last_name)
+VALUES ('First Name 1', 'Last Name 1'),
+        ('First Name 2', 'Last Name 2'),
+        ('First Name 3', 'Last Name 3');
+```
+
+Or insert values returned by a query:
+
+```sql
+INSERT INTO <table_name> (<column_names>)
+SELECT <query>;
+```
+
 
 ## MySQL
 - [Insert Docs](https://dev.mysql.com/doc/refman/8.0/en/insert.html)
@@ -28,3 +44,5 @@ VALUES (
 
 ## SQLite
 - [Insert Docs](https://www.sqlite.org/lang_insert.html)
+
+
