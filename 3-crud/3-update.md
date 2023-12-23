@@ -1,13 +1,6 @@
 # UPDATE
 
 ```sql
-SELECT <columns>
-FROM <table_name>;
-```
-
-OR
-
-```sql
 UPDATE <table_name>
 SET <colun_name> = <new_value>, ...
 WHERE <condition>;

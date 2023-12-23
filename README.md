@@ -22,6 +22,7 @@ This project is a WIKI for comparing the syntax of different relational database
   - [Insert](3-crud/1-insert.md)
   - [Select](3-crud/2-select.md)
   - [Update](3-crud/3-update.md)
+  - [Delete](3-crud/4-delete.md)
 - Stored Procedures
   - [Create Stored Procedure](4-stored-procedures/1-create-stored-procedure.md)
 - Triggers
